@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+  height: 100%;
+  -webkit-animation: hue-rotate 10s linear infinite;
+          animation: hue-rotate 10s linear infinite;
+}
+
+.containerButton {
+  max-width:100%;
+  max-height:100%
+}
+
+.containerButtonUpdated{
+  width:400px;
+  height:400px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.gif-center
+{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+  height: 100%;
+  -webkit-animation: hue-rotate 10s linear infinite;
+          animation: hue-rotate 10s linear infinite;
+}
+
+
+@import 'normalize.css';
+
+
+html
+{
+    box-sizing: border-box;
+}
+*,* :before, *::after
+{
+    box-sizing: inherit;
+}
+
+.background-primary {
+    background: #F7941E; /*Orange*/
+    font-family: "Times New Roman";
+
+  }
+  .background-secondary {
+    background: #00AEEF; /*Blue*/
+    font-size: 30px;
+    font-family: "Times New Roman";
+  }
+  .background-tertiary {
+    background: #8DC63F; /*Green*/
+    
+  }
+
+  body {
+    margin-left: 10px;
+  }
+  
+  .ng-cloak {
+    display: none;
+  }
+  
+  .data-item {
+    cursor: pointer;
+  }
+  
+  .margin-top-medium {
+    margin-top: 24px;
+  }
+  
+  .nav-tabs>li>a {
+    cursor: pointer;
+  }
+  
+  .tabs .tab-content {
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .table.table-hover tbody tr:hover {
+    cursor: pointer;
+  }
+
+  .header {
+    padding:40px;
+    min-height: 200px;
+    max-height: 20000000px;
+    min-width: 100%;
+    min-width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 15px;
+    font-family: 'Oxygen Mono', monospace;
+  }
+
+  .header2 {
+    padding: 30px;
+    min-height: 30% ;
+    min-width: 60% ;
+    max-height: 50;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+    font-size: 15px;
+    font-family: 'Oxygen Mono', monospace;
+  }
+
+  .header4 {
+    padding: 30px;
+    min-height: 30% ;
+    min-width: 60% ;
+    max-height: 50;
+
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+    font-size: 15px;
+    font-family: 'Oxygen Mono', monospace;
+  }
+
+  .header3 {
+    padding: 60px;
+    min-height: 30% ;
+    min-width: 60% ;
+    max-height: 50;
+
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+    font-size: 15px;
+    font-family: 'Oxygen Mono', monospace;
+  }
+
+  .DoTheFive
+  {
+    font-family: "Times New Roman";
+  }
+
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #1abc9c;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.panel {
+  width: 750px;
+  height: 400px;
+  background: #838CC7;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 60px;
+  background: #fff;
+}
+
+.title {
+  color: #5E6977;
+  font-weight: 500;
+}
+
+.calendar-views span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #BDC6CF;
+  padding: 6px 14px;
+  border: 2px solid transparent;
+}
+.calendar-views span:hover {
+  border: 2px solid #BDC6CF;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.panel-body {
+  display: flex;
+  height: 340px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 25%;
+  padding: 39px 0px 41px 26px;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+}
+.category span:first-child {
+  font-weight: 300;
+  font-size: 14px;
+  opacity: 0.6;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.category span:last-child {
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  position: relative;
+}
+
+.operating-systems {
+  display: flex;
+  justify-content: space-between;
+  width: 215px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+span[class*="-os"] {
+  font-size: 14px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #c3c6e4;
+}
+span[class*="-os"] span {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 9px;
+}
+.android-os span {
+  background: #80B354;
+}
+.ios-os span {
+  background: #F5A623;
+}
+.windows-os span {
+  background: #F8E71C;
+}
+
+div[class*="-stats"] {
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  opacity: 0;
+  animation: showstats 0.6s linear 1.8s;
+  animation-fill-mode: forwards;
+}
+
+div[class*="-stats"] span {
+  height: 12px;
+  width: 12px;
+  margin: 0 7px;
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+div[class*="-stats"] span:hover {
+  transform: scale(1.4) rotate(0.02deg);
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.android-stats {
+  bottom: 155px;
+  right: 230px;
+}
+.android-stats span:hover {
+  background: #80B354;
+}
+
+.ios-stats {
+  bottom: 83px;
+  left: 133px;
+}
+.ios-stats span:hover {
+  background: #F5A623;
+}
+
+.windows-stats {
+  bottom: 133px;
+  right: 62px;
+}
+.windows-stats span:hover {
+  background: #F8E71C;
+}
+
+.dataset-1 {
+  animation: raise .8s linear 1;
+  transform-origin: bottom;
+}
+.dataset-2 {
+  animation: raise 1.6s linear 1;
+  transform-origin: bottom;
+}
+.dataset-3 {
+  animation: raise 1.8s linear 1;
+  transform-origin: bottom;
+}
+
+.lines {
+  opacity: 0;
+  animation: showlines 0.6s linear 1.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showlines {
+  to { opacity: 0.2; }
+}
+
+@keyframes showstats {
+  to { opacity: 1; }
+}
+
+@keyframes raise {
+  0% { transform: scaleY(0.01); }
+  75% { transform: scaleY(1.1); }
+  100% { transform: scaleY(1); }
+}
