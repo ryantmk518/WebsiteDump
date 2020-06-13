@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        @font-face {
+            font-family: font1;
+            src: url(Montserrat-Regular.ttf);
+        }
+
+        body {
+            margin: 0;
+        }
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            ul.topnav li {
+                float: left;
+            }
+
+                ul.topnav li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-family: font1;
+                }
+
+                    ul.topnav li a:hover:not(.active) {
+                        background-color: #111;
+                    }
+
+                    ul.topnav li a.active {
+                        background-color: red;
+                    }
+
+                ul.topnav li.right {
+                    float: right;
+                }
+
+        @media screen and (max-width: 600px) {
+            ul.topnav li.right,
+            ul.topnav li {
+                float: none;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <ul class="topnav">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="Cases.html">National Stats</a></li>
+        <li><a href="Deaths.html">International Stats</a></li>
+        <li><a href="newPage.html">News</a></li>
+        <li><a class="active" href="Contact.html">Contact</a></li>
+    </ul>
+    <br>
+    <style>
+        @font-face {
+            font-family: font2;
+            src: url(NotoSansJP-Regular.ttf);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.333333333333%;
+            padding-right: 5px;
+            border-top: 5px solid red;
+            border-bottom: 5px solid red;
+            border-left: 2.5px solid red;
+            border-right: 2.5px solid red;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        p {
+            font-family: font2;
+        }
+    </style>
+
+<p>Thanks for reaching out. You can contact us at OregonCoronaVirus@gmail.com or fill out the form below. Our team will get back to you as soon as possible. Thank you for your patience.</p>
+
+</body>
+</html>

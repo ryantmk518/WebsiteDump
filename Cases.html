@@ -37,6 +37,12 @@
   }
   </script>
 <style>
+
+    @font-face {
+        font-family: font1;
+        src: url(Montserrat-Regular.ttf);
+    }
+
 body {margin: 0;}
 
 ul.topnav {
@@ -55,6 +61,7 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: font1;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -84,12 +91,14 @@ tr:nth-child(even){background-color: #f2f2f2}
 
 </style>
 <style>
-* {box-sizing: border-box}
+    * {
+        box-sizing: border-box
+    }
 
-.container {
-  width: 100%;
-  background-color: #ddd;
-}
+    .container {
+        width: 100%;
+        background-color: #ddd;
+    }
 
 .skills {
   text-align: right;

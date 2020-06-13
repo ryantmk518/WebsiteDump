@@ -3,15 +3,23 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body {margin: 0;}
 
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+    @font-face {
+        font-family: font1;
+        src: url(Montserrat-Regular.ttf);
+    }
+
+    body {
+        margin: 0;
+    }
+
+    ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
 
 ul.topnav li {float: left;}
 
@@ -21,6 +29,7 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: font1;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -38,13 +47,13 @@ ul.topnav li.right {float: right;}
 </head>
 <body>
 
-  <ul class="topnav">
-    <li><a href="main.html">Home</a></li>
-    <li><a href="Contact.html">Contact</a></li>
-    <li><a href="Cases.html">National Stats</a></li>
-    <li><a href="Deaths.html">International Stats</a></li>
-    <li><a class="active" href= "newPage.html">News</a></li>
-  </ul>
+    <ul class="topnav">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="Cases.html">National Stats</a></li>
+        <li><a href="Deaths.html">International Stats</a></li>
+        <li><a class="active" href="newPage.html">News</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
 <br>
 <style>
     * {
