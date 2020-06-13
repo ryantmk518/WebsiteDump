@@ -1,127 +1,156 @@
 ﻿<html>
-  <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-  window.onload = function () {
-  
-  var chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    theme: "light2",
-    title:{
-      text: "Simple Line Chart"
-    },
-    axisY:{
-      includeZero: false
-    },
-    data: [{        
-      type: "line",
-          indexLabelFontSize: 16,
-      dataPoints: [
-        { y: 450 },
-        { y: 414},
-        { y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
-        { y: 460 },
-        { y: 450 },
-        { y: 500 },
-        { y: 480 },
-        { y: 480 },
-        { y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
-        { y: 500 },
-        { y: 480 },
-        { y: 510 }
-      ]
-    }]
-  });
-  chart.render();
-  
-  }
-  </script>
-<style>
+<head>
+    <link rel="icon" href="coronaIcon.png">
+    <title>National Stats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = function () {
 
-    @font-face {
-        font-family: font1;
-        src: url(Montserrat-Regular.ttf);
-    }
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                    text: "Simple Line Chart"
+                },
+                axisY: {
+                    includeZero: false
+                },
+                data: [{
+                    type: "line",
+                    indexLabelFontSize: 16,
+                    dataPoints: [
+                        { y: 450 },
+                        { y: 414 },
+                        { y: 520, indexLabel: "\u2191 highest", markerColor: "red", markerType: "triangle" },
+                        { y: 460 },
+                        { y: 450 },
+                        { y: 500 },
+                        { y: 480 },
+                        { y: 480 },
+                        { y: 410, indexLabel: "\u2193 lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
+                        { y: 500 },
+                        { y: 480 },
+                        { y: 510 }
+                    ]
+                }]
+            });
+            chart.render();
 
-body {margin: 0;}
+        }
+    </script>
+    <style>
 
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+        @font-face {
+            font-family: font1;
+            src: url(Montserrat-Regular.ttf);
+        }
 
-ul.topnav li {float: left;}
+        body {
+            margin: 0;
+        }
 
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: font1;
-}
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+            ul.topnav li {
+                float: left;
+            }
 
-ul.topnav li a.active {background-color:red;}
+                ul.topnav li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-family: font1;
+                }
 
-ul.topnav li.right {float: right;}
+                    ul.topnav li a:hover:not(.active) {
+                        background-color: #111;
+                    }
 
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-}
+                    ul.topnav li a.active {
+                        background-color: red;
+                    }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd;
-}
+                ul.topnav li.right {
+                    float: right;
+                }
 
-th, td {
-  text-align: left;
-  padding: 8px;
-}
+        @media screen and (max-width: 600px) {
+            ul.topnav li.right,
+            ul.topnav li {
+                float: none;
+            }
+        }
 
-tr:nth-child(even){background-color: #f2f2f2}
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
 
-</style>
-<style>
-    * {
-        box-sizing: border-box
-    }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
 
-    .container {
-        width: 100%;
-        background-color: #ddd;
-    }
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+    </style>
+    <style>
+        * {
+            box-sizing: border-box
+        }
 
-.skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-}
+        .container {
+            width: 100%;
+            background-color: #ddd;
+        }
 
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
-</style>
+        .skills {
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        .html {
+            width: 90%;
+            background-color: #4CAF50;
+        }
+
+        .css {
+            width: 80%;
+            background-color: #2196F3;
+        }
+
+        .js {
+            width: 65%;
+            background-color: #f44336;
+        }
+
+        .php {
+            width: 60%;
+            background-color: #808080;
+        }
+    </style>
 
 </head>
 
 <ul class="topnav">
-  <li><a href="main.html">Home</a></li>
-  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="main.html">Home</a></li>  
   <li><a class="active" href="Cases.html">National Stats</a></li>
   <li><a href="Deaths.html">International Stats</a></li>
   <li><a href= "newPage.html">News</a></li>
-
+  <li><a href="Contact.html">Contact</a></li>
 </ul>
 <br>
 <style>
